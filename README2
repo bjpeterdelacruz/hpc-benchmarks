@@ -1,0 +1,49 @@
+=======================================================
+BENCHMARKS SUITE FOR HIGH PERFORMANCE COMPUTING (BSHPC)
+=======================================================
+
+Instructions:
+
+1. Use the included makefile to compile the programs.
+
+2. Edit the scripts as necessary so that all nodes are utilized. I already selected all 320 nodes for
+   the shearsort and sndrcv programs. Note that mpiprocs and ncpus equal 2 in io.run.sh, mem.run.sh,
+   and mm.run.sh. I chose 2 instead of 4 so that the nodes will not run into out-of-memory errors if
+   either mpiprocs and ncpus equal 3 or 4, or a very large number is specified as an argument (e.g.
+   1000000000). You can change the value for select, but I would strongly suggest not changing the other
+   two if you're also going to change the argument passed into the program.
+
+3. Run the scripts. See README for information about the scripts.
+
+
+
+File               Script           Type of benchmark
+----------------------------------------------------------
+cpumem.c           cpu.run.sh       CPU
+cpumem.c           mem.run.sh       Memory
+fileio_block.c     block.run.sh     File I/O*
+fileio.c           io.run.sh        File I/O*
+mm.c               mm.run.sh        General performance
+oetsort.c          oe.run.sh        General performance
+pi.c               pi.run.sh        General performance
+prime.c            prime.run.sh     General performance
+shearsort.c        ss.run.sh**      General performance
+sndrcv.c           snd.run.sh***    Communication
+
+
+
+* Before running the two file I/O tests, run the following command to generate a text file with two
+  billion characters in it (2 GB).
+
+     ./filegen 2000000000
+
+  The name of the text file will be "unsorted.txt."
+
+  Once all the tests are done, you may delete the text file.
+
+** Number of nodes selected is 320 (all nodes) and 1280 processes. Using 60 nodes and 240 processes,
+   runtime was only 5 seconds, so the program may not take more than a minute to run.
+
+*** Number of nodes selected is 320 (all nodes) and 1280 processes. Using 25 nodes and 100 processes,
+    runtime was 50 seconds, so the program may take several minutes to run. If the program is running
+    longer than you want it to run, you may revert back to 25 nodes and 100 processes.
