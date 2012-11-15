@@ -13,10 +13,14 @@ Usage:
 ./fileio_block A B C D
 ```
 
-A: Smallest block size
-B: Largest block size
-C: Number of blocks to read from and write to file
-D: Number of times that the program will run
+<table>
+<tr><td>A</td><td>Smallest block size</td></tr>
+<tr><td>B</td><td>Largest block size</td></tr>
+<tr><td>C</td><td>Number of blocks to read from and write to file</td></tr>
+<tr><td>D</td><td>Number of times that the program will run</td></tr>
+</table>
+
+---
 
 ### cpu.run.sh
 
@@ -27,16 +31,20 @@ Usage:
 ./cpumem A B C D E F
 ```
 
-A: Number of POSIX threads to use for CPU test
-B: Number of times to repeat CPU test
-C: Minimize size of array for memory test
-D: Maximum size of array for memory test
-E: Number of seconds to sleep during memory test
-F: Number of times to repeat memory test
+<table>
+<tr><td>A</td><td>Number of POSIX threads to use for CPU test</td></tr>
+<tr><td>B</td><td>Number of times to repeat CPU test</td></tr>
+<tr><td>C</td><td>Minimize size of array for memory test</td></tr>
+<tr><td>D</td><td>Maximum size of array for memory test</td></tr>
+<tr><td>E</td><td>Number of seconds to sleep during memory test</td></tr>
+<tr><td>F</td><td>Number of times to repeat memory test</td></tr>
+</table>
 
 Notes:
 
 * Change only A and B for the CPU test.
+
+---
 
 ### io.run.sh
 
@@ -46,8 +54,9 @@ Usage:
 ```
 ./fileio A
 ```
-
-A: Size of array that will contain characters read in from file
+<table>
+<tr><td>A</td><td>Size of array that will contain characters read in from file</td></tr>
+</table>
 
 Notes:
 
@@ -64,12 +73,14 @@ Usage:
 ./cpumem A B C D E F
 ```
 
-A: Number of pthreads to use for CPU test
-B: Number of times to repeat CPU test
-C: Minimize size of array for memory test
-D: Maximum size of array for memory test
-E: Number of seconds to sleep during memory test
-F: Number of times to repeat memory test
+<table>
+<tr><td>A</td><td>Number of pthreads to use for CPU test</td></tr>
+<tr><td>B</td><td>Number of times to repeat CPU test</td></tr>
+<tr><td>C</td><td>Minimize size of array for memory test</td></tr>
+<tr><td>D</td><td>Maximum size of array for memory test</td></tr>
+<tr><td>E</td><td>Number of seconds to sleep during memory test</td></tr>
+<tr><td>F</td><td>Number of times to repeat memory test</td></tr>
+</table>
 
 Notes:
 
@@ -88,10 +99,12 @@ Usage:
 ./mm A B C D
 ```
 
-A: Number of rows in matrix A
-B: Number of columns in matrix A
-C: Number of rows in matrix B
-D: Number of columns in matrix B
+<table>
+<tr><td>A</td><td>Number of rows in matrix A</td></tr>
+<tr><td>B</td><td>Number of columns in matrix A</td></tr>
+<tr><td>C</td><td>Number of rows in matrix B</td></tr>
+<tr><td>D</td><td>Number of columns in matrix B</td></tr>
+</table>
 
 Notes:
 
@@ -108,7 +121,9 @@ Usage:
 ./oetsort A
 ```
 
-A: Dimension of square matrix, i.e. number of rows = number of columns
+<table>
+<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns/td></tr>
+</table>
 
 Notes:
 
@@ -125,8 +140,10 @@ Usage:
 ./pi A B
 ```
 
-A: Number of calculations
-B: 1 for Bailey-Borwein-Plouffe algorithm or 2 for Gregory-Leibniz series
+<table>
+<tr><td>A</td><td>Number of calculations/td></tr>
+<tr><td>B</td><td>1 for Bailey-Borwein-Plouffe algorithm or 2 for Gregory-Leibniz series/td></tr>
+</table>
 
 ---
 
@@ -139,7 +156,9 @@ Usage:
 ./prime A
 ```
 
-A: Highest number to test for primality
+<table>
+<tr><td>A</td><td>Highest number to test for primality/td></tr>
+</table>
 
 Notes:
 
@@ -156,8 +175,10 @@ Usage:
 ./sndrcv A B
 ```
 
-A: Size of array that will contain characters
-B: Number of times that the program will run
+<table>
+<tr><td>A</td><td>Size of array that will contain characters/td></tr>
+<tr><td>B</td><td>Number of times that the program will run/td></tr>
+</table>
 
 ---
 
@@ -170,7 +191,9 @@ Usage:
 ./shearsort A
 ```
 
-A: Dimension of square matrix, i.e. number of rows = number of columns
+<table>
+<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns/td></tr>
+</table>
 
 Notes:
 
