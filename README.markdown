@@ -1,6 +1,6 @@
 # HPC Benchmarks Suite
 
-Type 'make' to update the executables before running each script.
+Type `make` to update the executables before running each script.
 
 ## How to run each script
 
