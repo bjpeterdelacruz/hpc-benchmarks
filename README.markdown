@@ -122,7 +122,7 @@ Usage:
 ```
 
 <table>
-<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns/td></tr>
+<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns</td></tr>
 </table>
 
 Notes:
@@ -141,8 +141,8 @@ Usage:
 ```
 
 <table>
-<tr><td>A</td><td>Number of calculations/td></tr>
-<tr><td>B</td><td>1 for Bailey-Borwein-Plouffe algorithm or 2 for Gregory-Leibniz series/td></tr>
+<tr><td>A</td><td>Number of calculations</td></tr>
+<tr><td>B</td><td>1 for Bailey-Borwein-Plouffe algorithm or 2 for Gregory-Leibniz series</td></tr>
 </table>
 
 ---
@@ -157,7 +157,7 @@ Usage:
 ```
 
 <table>
-<tr><td>A</td><td>Highest number to test for primality/td></tr>
+<tr><td>A</td><td>Highest number to test for primality</td></tr>
 </table>
 
 Notes:
@@ -176,8 +176,8 @@ Usage:
 ```
 
 <table>
-<tr><td>A</td><td>Size of array that will contain characters/td></tr>
-<tr><td>B</td><td>Number of times that the program will run/td></tr>
+<tr><td>A</td><td>Size of array that will contain characters</td></tr>
+<tr><td>B</td><td>Number of times that the program will run</td></tr>
 </table>
 
 ---
@@ -192,7 +192,7 @@ Usage:
 ```
 
 <table>
-<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns/td></tr>
+<tr><td>A</td><td>Dimension of square matrix, i.e. number of rows = number of columns</td></tr>
 </table>
 
 Notes:
